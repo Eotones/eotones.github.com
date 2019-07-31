@@ -18,15 +18,20 @@ ga('send', 'pageview');
 
 
   
-  <title>EOTONES Blog</title>
+  <title>Content Security Policy (CSP) 筆記 | EOTONES Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="EOTONES Blog">
-<meta property="og:url" content="https://eotones.github.io/index.html">
+  <meta name="description" content="Content Security Policy (CSP) 內容安全政策 Content Security Policy是寫給瀏覽器看的 他寫在從伺服端回應給使用者瀏覽器端網頁的HTTP Header裡 主要用來限制網頁中對外部的請求來源(例如:css,js(ajax,ws),webfont,img,video,iframe等等) 還有一部份是禁止HTML行內的JS或CSS運作 以及限制&amp;lt;f">
+<meta name="keywords" content="Security,HTTP Header">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Content Security Policy (CSP) 筆記">
+<meta property="og:url" content="https://eotones.github.io/Web-security/Content-Security-Policy-CSP.html">
 <meta property="og:site_name" content="EOTONES Blog">
+<meta property="og:description" content="Content Security Policy (CSP) 內容安全政策 Content Security Policy是寫給瀏覽器看的 他寫在從伺服端回應給使用者瀏覽器端網頁的HTTP Header裡 主要用來限制網頁中對外部的請求來源(例如:css,js(ajax,ws),webfont,img,video,iframe等等) 還有一部份是禁止HTML行內的JS或CSS運作 以及限制&amp;lt;f">
 <meta property="og:locale" content="zh-TW">
+<meta property="og:updated_time" content="2019-07-31T10:13:59.305Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EOTONES Blog">
+<meta name="twitter:title" content="Content Security Policy (CSP) 筆記">
+<meta name="twitter:description" content="Content Security Policy (CSP) 內容安全政策 Content Security Policy是寫給瀏覽器看的 他寫在從伺服端回應給使用者瀏覽器端網頁的HTTP Header裡 主要用來限制網頁中對外部的請求來源(例如:css,js(ajax,ws),webfont,img,video,iframe等等) 還有一部份是禁止HTML行內的JS或CSS運作 以及限制&amp;lt;f">
   
     <link rel="alternate" href="/atom.xml" title="EOTONES Blog" type="application/atom+xml">
   
@@ -73,9 +78,7 @@ ga('send', 'pageview');
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Content-Security-Policy-CSP" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Content-Security-Policy-CSP" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/Web-security/Content-Security-Policy-CSP.html" class="article-date">
   <time datetime="2019-07-31T10:11:30.000Z" itemprop="datePublished">2019-07-31</time>
@@ -92,8 +95,8 @@ ga('send', 'pageview');
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/Web-security/Content-Security-Policy-CSP.html">Content Security Policy (CSP) 筆記</a>
+    <h1 class="article-title" itemprop="name">
+      Content Security Policy (CSP) 筆記
     </h1>
   
 
@@ -356,108 +359,19 @@ ga('send', 'pageview');
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-test-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Hexo/test-post.html" class="article-date">
-  <time datetime="2019-07-30T22:36:58.000Z" itemprop="datePublished">2019-07-31</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/Hexo/test-post.html">test post</a>
-    </h1>
+    <a href="/Hexo/test-post.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">test post</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>test</p>
-<h2 id="test"><a class="header-anchor" href="#test"></a>test</h2>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">"test"</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"test"</span>);</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://eotones.github.io/Hexo/test-post.html" data-id="cjyr3fdni0001vgfblpojx5fk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Hexo/hello-world.html" class="article-date">
-  <time datetime="2019-07-30T21:12:13.631Z" itemprop="datePublished">2019-07-31</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Hexo/hello-world.html">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="quick-start"><a class="header-anchor" href="#quick-start"></a>Quick Start</h2>
-<h3 id="create-a-new-post"><a class="header-anchor" href="#create-a-new-post"></a>Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="run-server"><a class="header-anchor" href="#run-server"></a>Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="generate-static-files"><a class="header-anchor" href="#generate-static-files"></a>Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="header-anchor" href="#deploy-to-remote-sites"></a>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://eotones.github.io/Hexo/hello-world.html" data-id="cjyr3fdm70000vgfbjxwsqcc9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
